@@ -1,0 +1,26 @@
+// .eslintrc.js o .eslintrc.json
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["@typescript-eslint", "react", "prettier"],
+  "rules": {
+    // Otras reglas aquí
+
+    // Regla para permitir 'children' en los props
+    "react/prop-types": "off",
+    "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "prettier/prettier": ["error", {}, { usePrettierrc: true }]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
