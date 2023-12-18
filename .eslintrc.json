@@ -1,4 +1,3 @@
-// .eslintrc.js o .eslintrc.json
 {
   "parser": "@typescript-eslint/parser",
   "extends": [
@@ -9,9 +8,6 @@
   ],
   "plugins": ["@typescript-eslint", "react", "prettier"],
   "rules": {
-    // Otras reglas aquí
-
-    // Regla para permitir 'children' en los props
     "react/prop-types": "off",
     "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
     "@typescript-eslint/explicit-module-boundary-types": "off",
